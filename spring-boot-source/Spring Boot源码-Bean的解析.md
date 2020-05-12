@@ -329,6 +329,10 @@
 
 - 进入org.springframework.context.support.AbstractApplicationContext#prepareBeanFactory方法（在使用context之前的准备工作）
 
+ 
+
+  [BeanFactory ignoreDependencyInterface 详解](https://www.jianshu.com/p/3c7e0608ff1f)
+
   ```java
   protected void prepareBeanFactory(ConfigurableListableBeanFactory beanFactory) {
       // Tell the internal bean factory to use the context's class loader etc.
@@ -375,11 +379,11 @@
   }
   ```
 
-  
-
 - 
 
 ### postProcessBeanFactory
+
+- 
 
 ###invokeBeanFactoryPostProcessors
 
