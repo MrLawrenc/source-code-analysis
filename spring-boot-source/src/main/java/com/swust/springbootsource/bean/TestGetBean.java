@@ -78,6 +78,7 @@ public class TestGetBean implements ApplicationRunner {
         context.getBeanDefinitionNames();
 
 
+
         System.out.println(factoryBeanTest);
         System.out.println(cat.getName() + "  " + dog.getName() + "  " + bird.getName());
     }
