@@ -3,3 +3,5 @@ context:
 #    使用该方式配置order注解会失效，实际order是0
     classes: com.swust.springbootsource.initializer.MyInitializer3
 
+mustKey: 我是必备属性，必须存在，否则启动报错
+
