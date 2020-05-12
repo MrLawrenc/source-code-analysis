@@ -1,0 +1,4 @@
+# org.springframework.boot.SpringApplicationRunListener=org.springframework.boot.context.event.EventPublishingRunListener
+org.springframework.boot.SpringApplicationRunListener=com.swust.springbootsource.event.listener.MyListener4SpringFactoryConfig
+
+org.springframework.context.ApplicationContextInitializer=com.swust.springbootsource.initializer.MyInitializer1

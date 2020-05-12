@@ -1,0 +1,5 @@
+context:
+  initializer:
+#    使用该方式配置order注解会失效，实际order是0
+    classes: com.swust.springbootsource.initializer.MyInitializer3
+
