@@ -1,0 +1,34 @@
+package com.swust.springbootsource.designpatterns.impl;
+
+import com.swust.springbootsource.designpatterns.Config;
+import com.swust.springbootsource.designpatterns.FilterChain;
+import com.swust.springbootsource.designpatterns.Request;
+import com.swust.springbootsource.designpatterns.Response;
+import com.swust.springbootsource.designpatterns.abs.Filter;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+/**
+ * @author : MrLawrenc
+ * @date : 2020/5/13 23:29
+ * @description : TODO
+ */
+@Order(0)
+@Component
+public class Filter3 implements Filter {
+    @Override
+    public void init(Config filterConfig) {
+        System.out.println("过滤器3 init...........");
+    }
+
+    @Override
+    public void doFilter(Request request, Response response, FilterChain chain) {
+        System.out.println("过滤器3 doFilter...........");
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("过滤器3 destroy...........");
+    }
+
+}
