@@ -18,7 +18,7 @@ public class ServiceInvoker2 implements Invoker {
     }
 
     @Override
-    public Response invoke(Request request) {
+    public Response doInvoke(Request request) {
         System.out.println("service2 doing....................");
         return null;
     }

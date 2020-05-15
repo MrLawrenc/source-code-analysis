@@ -17,5 +17,5 @@ public interface Invoker {
      * @param request 请求
      * @return 响应
      */
-    Response invoke(Request request);
+    Response doInvoke(Request request);
 }

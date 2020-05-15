@@ -69,7 +69,7 @@ public class FilterChain implements InitializingBean {
             beanFilters.get(current++).doFilter(request, response, this);
             this.doFilter(request, response);
         }
-        return currentInvoker.invoke(request);
+        return currentInvoker.doInvoke(request);
     }
 
     public Filter pre() {

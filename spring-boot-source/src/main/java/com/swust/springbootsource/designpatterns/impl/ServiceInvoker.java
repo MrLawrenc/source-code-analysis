@@ -14,13 +14,17 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class ServiceInvoker implements Invoker {
-    public ServiceInvoker() {
-    }
 
     @Override
-    public Response invoke(Request request) {
-        System.out.println("service doing....................");
+    public Response doInvoke(Request request) {
+        System.out.println("service1 doing....................");
+        //若使用methodProxy.invokeSuper调用，则当前方法也会被代理，不会存在aop那种同级方法调用代理失效的问题
+        //other();
         return null;
+    }
+
+    public  void other(){
+        System.out.println("invoker1 other method...........");
     }
 
 }
