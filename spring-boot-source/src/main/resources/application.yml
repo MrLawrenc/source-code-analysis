@@ -5,5 +5,5 @@ context:
 
 mustKey: 我是必备属性，必须存在，否则启动报错
 
-#filter:
-#  basepkg: com
+filter:
+  basepkg: com.swust

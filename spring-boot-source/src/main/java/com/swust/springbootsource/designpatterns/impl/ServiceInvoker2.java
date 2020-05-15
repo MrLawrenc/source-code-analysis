@@ -13,13 +13,13 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Slf4j
-public class ServiceInvoker implements Invoker {
-    public ServiceInvoker() {
+public class ServiceInvoker2 implements Invoker {
+    public ServiceInvoker2() {
     }
 
     @Override
     public Response invoke(Request request) {
-        System.out.println("service doing....................");
+        System.out.println("service2 doing....................");
         return null;
     }
 
