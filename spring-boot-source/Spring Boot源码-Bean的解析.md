@@ -8,6 +8,8 @@
 
 ## IOC思想
 
+- 控制反转
+
 ## bean的两种配置方式
 
 ### xml配置
@@ -323,7 +325,7 @@
 
   
 
-- getBeanFactory();获取当前bean工厂，注解环境的bean工厂为org.springframework.beans.factory.support.DefaultListableBeanFactory
+- getBeanFactory();获取当前bean工厂，注解环境的bean工厂为org.springframework.beans.factory.support.DefaultListableBeanFactory（其子类还包含xml的bean工厂）
 
 ### prepareBeanFactory
 
